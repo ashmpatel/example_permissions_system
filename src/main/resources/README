@@ -1,0 +1,18 @@
+The h2 db console is available here after the APP is started.
+http://localhost:8080/h2-console
+username: sa
+password: password
+jdbc url: jdbc:h2:file:/data/demo
+
+
+-- create table to keep track of users
+CREATE TABLE users (
+   id INT NOT NULL,
+   user_id VARCHAR(50) NOT NULL,
+   department VARCHAR(20) NOT NULL,
+   hierarchy_id INT ,
+  creation_Date DATE
+);
+
+-- create table to keep track of hierarchy_links
+-- This is the one that has the tree of the hierarchy
